@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { HeroComponent } from './hero/hero.component';
+import { ItemComponent } from './item/item.component';
 // import { FormsModule } from '@angular/forms'
 
 
@@ -14,6 +15,7 @@ import { HeroComponent } from './hero/hero.component';
     AppComponent,
     FormComponent,
     HeroComponent,
+    ItemComponent,
    
   
   ],
