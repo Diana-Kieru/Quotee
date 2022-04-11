@@ -2,7 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
-  selector: 'app-qoute-form',
+  selector: 'qoute-form',
   templateUrl: './qoute-form.component.html',
   styleUrls: ['./qoute-form.component.css']
 })

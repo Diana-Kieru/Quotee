@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-votes',
+  selector: 'votes',
   templateUrl: './votes.component.html',
   styleUrls: ['./votes.component.css'],
 })
