@@ -1,1 +1,35 @@
-<p>quote works!</p>
+<div class="containerone">
+    <div class="box1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">quote</th>
+            <th scope="col">more details</th>
+            <th scope="col">time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let quote of quotes; let i = index">
+            <td>{{ quote.quote }}</td>
+            <td>
+              <button (click)="toggleDetails(i)" class="btn btn-outline-primary">
+                details
+              </button>
+              <div class="box3" *ngIf="quote.showdetails">
+                <app-quote-detail
+                  [quote]="quote"
+                  (ifSure)="deleteTheQuote($event, i)"
+                ></app-quote-detail>
+              </div>
+            </td>
+            <td>
+              <p>added :{{ quote.today | time }} ago</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box2">
+      <quote-form (addQuote)="addNewQuote($event)"></quote-form>
+    </div>
+  </div>
