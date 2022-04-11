@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
+import { VotesComponent } from './votes/votes.component';
 // import { FormsModule } from '@angular/forms'
 
 
@@ -18,6 +19,7 @@ import { QouteFormComponent } from './qoute-form/qoute-form.component';
        
     QuoteDetailComponent,
             QouteFormComponent,
+            VotesComponent,
    
   
   ],
