@@ -9,9 +9,10 @@ import { QouteFormComponent } from './qoute-form/qoute-form.component';
 import { VotesComponent } from './votes/votes.component';
 import { TimePipe } from './time.pipe';
 import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
-  declarations: [AppComponent, QouteFormComponent, VotesComponent, TimePipe, QuotesDetailsComponent],
+  declarations: [AppComponent, QouteFormComponent, VotesComponent, TimePipe, QuotesDetailsComponent, QuoteComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
