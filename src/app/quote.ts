@@ -1,17 +1,18 @@
 export class Quote {
-  public showdetails: boolean;
+  showdetails: boolean;
   id: number;
   name: string;
   quote: string;
-  public upvotes: any;
+  upvotes: number;
   downvotes: number;
   description: string;
   today:Date;
+  static downvotes: number;
   constructor(
     id: number,
     name: string,
     quote: string,
-    upvotes: any,
+    upvotes: number,
     downvotes: number,
     description: string,
     today :Date
